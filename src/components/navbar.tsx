@@ -144,16 +144,22 @@ export function Navbar() {
             >
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <IconButton
-              variant="text"
-              color="gray"
-              size="sm"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
+            <a
+              href="https://wa.me/5521969103370"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-whatsapp text-base" />
-            </IconButton>
+              <IconButton
+                variant="text"
+                color="gray"
+                size="sm"
+                placeholder=""
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
+              >
+                <i className="fa-brands fa-whatsapp text-base" />
+              </IconButton>
+            </a>
           </div>
         </div>
       </Collapse>
