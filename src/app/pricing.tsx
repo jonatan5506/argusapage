@@ -1,17 +1,16 @@
-"use client";
-import React from "react";
-import { Card, CardBody, Button, Typography } from "@material-tailwind/react";
-import { CheckIcon } from "@heroicons/react/24/outline";
-
+'use client';
+import React from 'react';
+import { Card, CardBody, Button, Typography } from '@material-tailwind/react';
+import { CheckIcon } from '@heroicons/react/24/outline';
 
 const PRICING_OPTIONS = [
-  "💻 Suporte Técnico Remoto e Presencial",
-  "🛠️ Manutenção de Sistemas e Infraestrutura",
-  "🔒 Segurança de Redes e Dados",
-  "📦 Gerenciamento de Backup e Recuperação de Dados",
-  "🌐 Suporte a Redes e Conectividade",
-  "🖥️ Instalação e Configuração de Software",
-  "🔧 Suporte à Infraestrutura de Servidores e Data Centers",
+  '💻 Suporte Técnico Remoto e Presencial',
+  '🛠️ Manutenção de Sistemas e Infraestrutura',
+  '🔒 Segurança de Redes e Dados',
+  '📦 Gerenciamento de Backup e Recuperação de Dados',
+  '🌐 Suporte a Redes e Conectividade',
+  '🖥️ Instalação e Configuração de Software',
+  '🔧 Suporte à Infraestrutura de Servidores e Data Centers'
 ];
 
 export function Pricing() {
@@ -19,16 +18,26 @@ export function Pricing() {
     <div className="grid min-h-screen place-items-center">
       <section className="container mx-auto px-10">
         <div className="grid place-items-center pb-20 text-center">
-          {/* <Typography variant="h2" color="blue-gray">
-          💰 Pague de acordo com os serviços prestados!.
-          </Typography> */}
         </div>
-        <Card className="px-6 pb-5">
-          <CardBody>
+        <Card
+          className="px-6 pb-5"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
+          <CardBody placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}>
             <div className="grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
               <div>
                 <div className="flex flex-wrap items-center gap-x-20 gap-y-6">
-                  <Typography variant="h6" color="blue-gray">
+                  <Typography
+                    variant="h6"
+                    color="blue-gray"
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
+                  >
                     Serviços Prestados
                   </Typography>
                   <hr className="w-72 bg-gray-500" />
@@ -44,6 +53,9 @@ export function Pricing() {
                       <Typography
                         variant="paragraph"
                         className="font-normal !text-gray-500"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
                       >
                         {option}
                       </Typography>
@@ -52,15 +64,30 @@ export function Pricing() {
                 </div>
               </div>
               <div className="grid place-items-center lg:justify-end">
-                <Typography variant="h6" color="blue-gray">
-                  Planos a partir de 
+                <Typography
+                  variant="h6"
+                  color="blue-gray"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                >
+                  Planos a partir de
                 </Typography>
-                <Typography variant="h1" color="blue-gray">
+                <Typography
+                  variant="h1"
+                  color="blue-gray"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+                >
                   R$399
                 </Typography>
                 <Typography
                   variant="small"
                   className="font-normal !text-gray-500"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
                 >
                   Consulte demais valores!
                 </Typography>
@@ -72,6 +99,5 @@ export function Pricing() {
     </div>
   );
 }
-
 
 export default Pricing;

@@ -27,10 +27,22 @@ function Option({ icon: Icon, title, children }: OptionProps) {
         <Icon className="text-gray-900 h-6 w-6" />
       </div>
       <div>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography
+          variant="h5"
+          color="blue-gray"
+          className="mb-2"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {title}
         </Typography>
-        <Typography className="mb-2 md:w-10/12 font-normal !text-gray-500">
+        <Typography
+          className="mb-2 md:w-10/12 font-normal !text-gray-500"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           {children}
         </Typography>
       </div>
@@ -41,12 +53,22 @@ function Option({ icon: Icon, title, children }: OptionProps) {
 export function WhyChooseUs() {
   return (
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-10">
-      <Typography variant="h2" className="text-center mb-2" color="blue-gray">
+      <Typography
+        variant="h2"
+        className="text-center mb-2"
+        color="blue-gray"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
+      >
         Virtualização de Servidores!
       </Typography>
       <Typography
         variant="lead"
         className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
       >
         💻 Modernize sua infraestrutura! Migre seu servidor on-premise para a
         nuvem com segurança, desempenho e escalabilidade.
@@ -88,29 +110,6 @@ export function WhyChooseUs() {
             </Option>
           </div>
         </div>
-        {/* <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <div className="space-y-8">
-            <div className="my-4">
-              <Option icon={KeyIcon} title="Routing with React Router">
-                Create single-page applications (SPAs) with seamless navigation
-                using React Router.
-              </Option>
-            </div>
-            <div className="mb-4 flex gap-4">
-              <Option icon={UsersIcon} title="Handling Forms">
-                Master form handling in React and manage user input effectively.
-              </Option>
-            </div>
-            <Option icon={CloudArrowDownIcon} title="State Management">
-              Explore state management options, including local component state
-              and global state using Redux or Context API.
-            </Option>
-          </div>
-          <BackgroundCard title="Supportive Community">
-            Connect with fellow learners, share experiences, and get support
-            from instructors and peers.
-          </BackgroundCard>
-        </div> */}
       </div>
     </section>
   );

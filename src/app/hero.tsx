@@ -12,6 +12,9 @@ function Hero() {
           variant="h1"
           color="white"
           className="md:max-w-full lg:max-w-3xl"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           Reduza problemas de TI e foque no que realmente importa!
         </Typography>
@@ -19,6 +22,9 @@ function Hero() {
           variant="lead"
           color="white"
           className="mt-6 mb-10 w-full md:max-w-full lg:max-w-3xl"
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
         >
           A <strong>Argus</strong>Tech é uma empresa especializada em suporte de TI, oferecendo serviços personalizados. Nosso objetivo é garantir segurança, eficiência e continuidade dos processos tecnológicos de nossos clientes..
         </Typography>
