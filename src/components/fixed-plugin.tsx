@@ -4,7 +4,7 @@ import { Button } from '@material-tailwind/react';
 
 export function FixedPlugin() {
   return (
-    <a href="https://www.material-tailwind.com" target="_blank">
+    <a href="https://wa.me/5521969103370" target="_blank">
       <Button
         color="white"
         size="sm"
@@ -13,15 +13,23 @@ export function FixedPlugin() {
         onPointerEnterCapture={() => {}}
         onPointerLeaveCapture={() => {}}
       >
-        <Image
-          width={100}
-          height={100}
-          className="w-5 h-5"
-          alt="Material Tailwind"
-          src="https://www.material-tailwind.com/favicon.png"
-        />{' '}
-        TODO BOTÃO WPP
+        <i className="fa-brands fa-whatsapp text-base" />
+        Whatsapp
       </Button>
     </a>
   );
+}
+
+{
+  /* <IconButton
+            variant="text"
+            color={isScrolling ? 'gray' : 'white'}
+            size="sm"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            onClick={() => window.open('https://wa.me/5521969103370', '_blank')}
+          >
+            <i className="fa-brands fa-whatsapp text-base" />
+          </IconButton> */
 }

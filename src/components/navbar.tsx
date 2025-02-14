@@ -79,7 +79,7 @@ export function Navbar() {
         >
           ArgusTech
         </Typography>
-        <ul
+        {/* <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? 'text-gray-900' : 'text-white'
           }`}
@@ -87,7 +87,7 @@ export function Navbar() {
           <NavItem>Home</NavItem>
           <NavItem>Sobre Nós</NavItem>
           <NavItem>Entre em Contato</NavItem>
-        </ul>
+        </ul> */}
         <div className="hidden gap-2 lg:flex">
           <IconButton
             variant="text"
@@ -96,6 +96,9 @@ export function Navbar() {
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
+            onClick={() =>
+              window.open('https://www.instagram.com/argustechconsult/', '_blank')
+            }
           >
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
@@ -106,6 +109,7 @@ export function Navbar() {
             placeholder=""
             onPointerEnterCapture={() => {}}
             onPointerLeaveCapture={() => {}}
+            onClick={() => window.open('https://wa.me/5521969103370', '_blank')}
           >
             <i className="fa-brands fa-whatsapp text-base" />
           </IconButton>
@@ -128,12 +132,13 @@ export function Navbar() {
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
-          <ul className="flex flex-col gap-4 text-blue-gray-900">
+          {/* <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
             <NavItem>Sobre Nós</NavItem>
             <NavItem>Entre em Contato</NavItem>
-          </ul>
+          </ul> */}
           <div className="mt-4 flex gap-2">
+            {/* TODO Direcionar para o Insta */}
             <IconButton
               variant="text"
               color="gray"
@@ -144,22 +149,17 @@ export function Navbar() {
             >
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
-            <a
-              href="https://wa.me/5521969103370"
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* TODO Direcionar para o Wpp */}
+            <IconButton
+              variant="text"
+              color="gray"
+              size="sm"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
             >
-              <IconButton
-                variant="text"
-                color="gray"
-                size="sm"
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-              >
-                <i className="fa-brands fa-whatsapp text-base" />
-              </IconButton>
-            </a>
+              <i className="fa-brands fa-whatsapp text-base" />
+            </IconButton>
           </div>
         </div>
       </Collapse>
